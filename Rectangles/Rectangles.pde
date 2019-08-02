@@ -16,10 +16,7 @@ strokeWeight(2);
 stroke(255);
   for (float y = 0; y < height; y = y + spacing){
     for (float x = 0; x < width; x = x + spacing){
-      float colourOne = random(255);
-      float colourTwo = random(255);
-      float colourThree = random(255);
-      fill(colourOne, colourTwo, colourThree);
+      noFill();
       rect(x, y, 20, 20);
     }
   }

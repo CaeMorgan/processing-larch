@@ -7,7 +7,7 @@ class VerticalLine{
   }
   
   void drawVerticalLines(){
-    stroke(255);
+    stroke((random(50,255)));
     strokeWeight(2);
     line(xPos,0,xPos,height); 
   }
