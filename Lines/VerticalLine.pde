@@ -13,6 +13,6 @@ class VerticalLine{
   }
   
   void moveVerticalLines(){
-    xPos = xPos + (random(-6,+6));
+    xPos += (random(-6,+6));
   }
 }

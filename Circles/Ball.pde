@@ -36,15 +36,15 @@ class Ball{
   }
   
   void moveBall(){
-    circleX = circleX + xSpeed;
-    circleY = circleY + ySpeed;
+    circleX += xSpeed;
+    circleY += ySpeed;
   }
   
   void wiggleBall(){
-    circleX = circleX + xSpeed;
-    circleY = circleY + ySpeed;
-    circleX = circleX + (random(-3,3));
-    circleY = circleY + (random(-3,3));
+    circleX += xSpeed;
+    circleY += ySpeed;
+    circleX += (random(-3,3));
+    circleY += (random(-3,3));
   }
   
     void edgeTeleport(){
@@ -52,7 +52,7 @@ class Ball{
       circleX = teleWidth;
       circleY = teleHeight;
     }
-    if(circleY >= height || circleY <=0){
+    if(circleY >= height || circleY <= 0){
       circleY = teleHeight;
       circleX = teleWidth;
     }

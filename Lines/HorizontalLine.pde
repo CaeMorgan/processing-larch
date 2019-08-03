@@ -7,12 +7,12 @@ class HorizontalLine{
   }
   
   void drawHorizontalLines(){
-    stroke (255);
+    stroke(255);
     strokeWeight(2);
     line(0,yPos,width,0);
   }
   
   void moveHorizontalLines(){
-    yPos = yPos + (random(-6,+6));
+    yPos += (random(-6,+6));
   }
 }
