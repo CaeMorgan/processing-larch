@@ -1,12 +1,13 @@
-//sets number of arcs that are drawn (80+ is slow)
-int numberOfSemis = 50;
-//list for storing arc objects
-ArrayList<Semi> semiList = new ArrayList<Semi>();
+//sets number of arcs that are drawn
+Semi[] semiList = new Semi[1000];
 
 void setup(){
-  size(1920,1080);
-  //adds arcs to array
-  for (int x = 0; x++ < numberOfSemis; semiList.add(new Semi((random(0,width))))); 
+  //set size of window and renderer
+  size(1920,1080,P2D);
+  //adds arcs of random x coord to array
+  for (int i = 0; i < semiList.length; i++){
+    semiList[i] = new Semi(random(0,width));
+  }
 }
 
 void draw(){

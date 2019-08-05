@@ -21,7 +21,7 @@ class Ball{
   }
   
   void displayResizedBalls(){
-    stroke((random(255)));
+    stroke((random(254)));
     noFill();
     ellipse(circleX, circleY, (random(1,30)), (random(1,30)));
   }

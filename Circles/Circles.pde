@@ -1,13 +1,12 @@
-//change value of numberOfBalls to spawn different number of balls
-int numberOfBalls = 1000;
-//parameters for program use
-ArrayList<Ball> ballPit = new ArrayList<Ball>();
+//sets number of balls to be drawn
+Ball[] ballPit = new Ball[1000];
 
 void setup(){
-  // set size of window
-  size(1920, 1080);
-  //add (numberOfBalls) ball objects to array
-  for(int x = 0; x++ < numberOfBalls; ballPit.add(new Ball())){
+  //set size of window and renderer
+  size(1920,1080,P2D);
+  //add ball objects to array
+  for(int i = 0; i < ballPit.length; i++){
+    ballPit[i] = new Ball();
   }
 }
 
